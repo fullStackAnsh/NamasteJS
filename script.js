@@ -1,10 +1,5 @@
-a(); // hoisted
-b(); //typeError
-// function statement 
-function a(){
-    console.log("a");
+// event listeners and callback functions
+function event(){
+    document.getElementById('click').addEventListener('click',function xyz(){console.log("Clicked");});
 }
-//function expression
-var b=function(){
-    console.log("b");
-}
+event(); //xyz forms a closure with event , xyz is a callback function here
